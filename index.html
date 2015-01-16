@@ -63,14 +63,15 @@
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
+    <title>Hacker 基因测试 - SegmentFault</title>
+
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="author" content="Integ" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -90,7 +91,7 @@
         
     -->
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
@@ -113,17 +114,18 @@
     it can be found later, when `hint` element is being described.
     
 -->
+
 <body class="impress-not-supported">
 
-<!--
+    <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
 
-<!--
+    <!--
     
     Now that's the core element used by impress.js.
     
@@ -144,9 +146,9 @@
     right around the corner of this tag ;)
     
 -->
-<div id="impress">
+    <div id="impress">
 
-    <!--
+        <!--
         
         Here is where interesting thing start to happen.
         
@@ -163,11 +165,12 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
-    </div>
-
-    <!--
+        <div id="bored" class="step slide" style="opacity:0.9" data-x="-1000" data-y="-1500">
+            <center>
+                <q><strong>SegmentFault</strong></q>
+            </center>
+        </div>
+        <!--
         
         The `id` attribute of the step element is used to identify it in the URL, but it's optional.
         If it is not defined, it will get a default value of `step-N` where N is a number of slide.
@@ -182,15 +185,15 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
-    </div>
+        <div class="step slide" style="opacity:0.8" data-x="0" data-y="-1500">
+            <center><q><strong>带你</strong></q>
+        </div>
+        <div class="step slide" style="opacity:0.7" data-x="1000" data-y="-1500">
+            <center><q><strong>自由的飞</strong></q>
+            </center>
+        </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
-    </div>
-
-    <!--
+        <!--
         
         This is an example of step element being scaled.
         
@@ -200,13 +203,13 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
-    </div>
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try">来看看刚才这</span>
+            <center><h1>π <small style="font-size:30px;">秒</small></h1></canvas>
+            <span class="footnote">互联网上发生了什么</span>
+        </div>
 
-    <!--
+        <!--
         
         This element introduces rotation.
         
@@ -214,17 +217,26 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
+        <div id="its" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="5">
+            <ul>
+                <li><strong>26,413</strong> 条 Twitter 消息</li>
+                <li><strong>5,231</strong> 张 Instagram 照片</li>
+                <li><strong>5,334</strong> 篇 Tumblr 博客</li>
+                <li><strong>5,152</strong> 通 Skype 电话</li>
+                <li><strong>79,592</strong> GB Internet 流量</li>
+                <li><strong>148,132</strong> 次 Google 搜索</li>
+                <li><strong>297,047</strong> 个 YouTube 视屏被浏览</li>
+                <li><strong>7,425,227</strong> 封 Email 被发送</li>
+            </ul>
+        </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
-    </div>
+        <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>一个漫长的<b style="font-size:150px">纳世纪</b>
+            <span class="footnote" style="font-size:20px;"><sup>*</sup>π 秒＝10e-9 世纪</span>
+            </p>
+        </div>
 
-    <!--
+        <!--
         
         And now it gets really exciting! We move into third dimension!
         
@@ -233,11 +245,12 @@
         positioned far away from us (by 3000px).
         
     -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
-    </div>
+        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <p><b>但是</b>
+            </p>
+        </div>
 
-    <!--
+        <!--
         
         This step here doesn't introduce anything new when it comes to data attributes, but you
         should notice in the demo that some words of this text are being animated.
@@ -257,24 +270,24 @@
         Only one current step has the `present` class.
         
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
+        <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            <p style="font-size:40px;">10 年前，<b class="positioning">Skype</b>, <b class="rotating">Facebook</b>, <b class="scaling">YouTube</b>, <b class="positioning">Reddit</b>, <b class="rotating">Twitter</b>, <b class="scaling">Tumblr</b>, <b class="positioning">Dropbox</b>, <b class="rotating">Instagram</b>还不存在</p>
+        </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
+        <div id="imagination" class="step" data-x="6700" data-y="-800" data-scale="6">
+            <p>20 年前，互联网上只有 <b>130</b> 个网站, <b>Google</b> 的两位创始人才刚刚认识，<b class="imagination">Email</b> 服务是需要付费的。</p>
+        </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-    </div>
+        <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <p>30 年前</p>
+            <p>世界上根本没有 Internet 。。。</p>
+        </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
+        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+            <q>加入 <a href="http://segmentfault.com/hiring">SegmentFault</a></q>
+        </div>
 
-    <!--
+        <!--
         
         And the last one shows full power and flexibility of impress.js.
         
@@ -286,12 +299,12 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p><span class="have">创造</span><span class="you">属于</span><span class="noticed">开发者</span><span class="its">的</span><span class="in">时代</span></p>
+            <span class="footnote" style="font-size:15px;">* Power by <a href="https://github.com/bartaz/impress.js">impress.js</a></span>
+        </div>
 
-    <!--
+        <!--
         
         So to summarize of all the possible attributes used to position presentation steps, we have:
         
@@ -306,12 +319,12 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
+
     </div>
 
-</div>
-
-<!--
+    <!--
     
     Hint is not related to impress.js in any way.
     
@@ -335,16 +348,16 @@
     Just sayin' ;)
     
 -->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
+    <div class="hint">
+        <p>Present by <a href="http://sf.gg">SegmentFault</a></p>
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
 
-<!--
+    <!--
     
     Last, but not least.
     
@@ -359,10 +372,13 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+        location
+    </script>
 
-<!--
+    <!--
     
     The `impress()` function also gives you access to the API that controls the presentation.
     
@@ -386,8 +402,432 @@ if ("ontouchstart" in document.documentElement) {
     is used in event handlers.
     
 -->
+    <script src="/three.js/three.min.js"></script>
 
+    <script src="/three.js/Projector.js"></script>
+    <script src="/three.js/CanvasRenderer.js"></script>
+
+    <script src="/three.js/Bird.js"></script>
+
+    <script>
+        // Based on http://www.openprocessing.org/visuals/?visualID=6910
+
+        var Boid = function() {
+
+            var vector = new THREE.Vector3(),
+                _acceleration, _width = 500,
+                _height = 500,
+                _depth = 200,
+                _goal, _neighborhoodRadius = 100,
+                _maxSpeed = 4,
+                _maxSteerForce = 0.1,
+                _avoidWalls = false;
+
+            this.position = new THREE.Vector3();
+            this.velocity = new THREE.Vector3();
+            _acceleration = new THREE.Vector3();
+
+            this.setGoal = function(target) {
+
+                _goal = target;
+
+            }
+
+            this.setAvoidWalls = function(value) {
+
+                _avoidWalls = value;
+
+            }
+
+            this.setWorldSize = function(width, height, depth) {
+
+                _width = width;
+                _height = height;
+                _depth = depth;
+
+            }
+
+            this.run = function(boids) {
+
+                if (_avoidWalls) {
+
+                    vector.set(-_width, this.position.y, this.position.z);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                    vector.set(_width, this.position.y, this.position.z);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                    vector.set(this.position.x, -_height, this.position.z);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                    vector.set(this.position.x, _height, this.position.z);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                    vector.set(this.position.x, this.position.y, -_depth);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                    vector.set(this.position.x, this.position.y, _depth);
+                    vector = this.avoid(vector);
+                    vector.multiplyScalar(5);
+                    _acceleration.add(vector);
+
+                }
+                /* else {
+
+                                        this.checkBounds();
+
+                                    }
+                                    */
+
+                if (Math.random() > 0.5) {
+
+                    this.flock(boids);
+
+                }
+
+                this.move();
+
+            }
+
+            this.flock = function(boids) {
+
+                if (_goal) {
+
+                    _acceleration.add(this.reach(_goal, 0.005));
+
+                }
+
+                _acceleration.add(this.alignment(boids));
+                _acceleration.add(this.cohesion(boids));
+                _acceleration.add(this.separation(boids));
+
+            }
+
+            this.move = function() {
+
+                this.velocity.add(_acceleration);
+
+                var l = this.velocity.length();
+
+                if (l > _maxSpeed) {
+
+                    this.velocity.divideScalar(l / _maxSpeed);
+
+                }
+
+                this.position.add(this.velocity);
+                _acceleration.set(0, 0, 0);
+
+            }
+
+            this.checkBounds = function() {
+
+                if (this.position.x > _width) this.position.x = -_width;
+                if (this.position.x < -_width) this.position.x = _width;
+                if (this.position.y > _height) this.position.y = -_height;
+                if (this.position.y < -_height) this.position.y = _height;
+                if (this.position.z > _depth) this.position.z = -_depth;
+                if (this.position.z < -_depth) this.position.z = _depth;
+
+            }
+
+            //
+
+            this.avoid = function(target) {
+
+                var steer = new THREE.Vector3();
+
+                steer.copy(this.position);
+                steer.sub(target);
+
+                steer.multiplyScalar(1 / this.position.distanceToSquared(target));
+
+                return steer;
+
+            }
+
+            this.repulse = function(target) {
+
+                var distance = this.position.distanceTo(target);
+
+                if (distance < 150) {
+
+                    var steer = new THREE.Vector3();
+
+                    steer.subVectors(this.position, target);
+                    steer.multiplyScalar(0.5 / distance);
+
+                    _acceleration.add(steer);
+
+                }
+
+            }
+
+            this.reach = function(target, amount) {
+
+                var steer = new THREE.Vector3();
+
+                steer.subVectors(target, this.position);
+                steer.multiplyScalar(amount);
+
+                return steer;
+
+            }
+
+            this.alignment = function(boids) {
+
+                var boid, velSum = new THREE.Vector3(),
+                    count = 0;
+
+                for (var i = 0, il = boids.length; i < il; i++) {
+
+                    if (Math.random() > 0.6) continue;
+
+                    boid = boids[i];
+
+                    distance = boid.position.distanceTo(this.position);
+
+                    if (distance > 0 && distance <= _neighborhoodRadius) {
+
+                        velSum.add(boid.velocity);
+                        count++;
+
+                    }
+
+                }
+
+                if (count > 0) {
+
+                    velSum.divideScalar(count);
+
+                    var l = velSum.length();
+
+                    if (l > _maxSteerForce) {
+
+                        velSum.divideScalar(l / _maxSteerForce);
+
+                    }
+
+                }
+
+                return velSum;
+
+            }
+
+            this.cohesion = function(boids) {
+
+                var boid, distance,
+                    posSum = new THREE.Vector3(),
+                    steer = new THREE.Vector3(),
+                    count = 0;
+
+                for (var i = 0, il = boids.length; i < il; i++) {
+
+                    if (Math.random() > 0.6) continue;
+
+                    boid = boids[i];
+                    distance = boid.position.distanceTo(this.position);
+
+                    if (distance > 0 && distance <= _neighborhoodRadius) {
+
+                        posSum.add(boid.position);
+                        count++;
+
+                    }
+
+                }
+
+                if (count > 0) {
+
+                    posSum.divideScalar(count);
+
+                }
+
+                steer.subVectors(posSum, this.position);
+
+                var l = steer.length();
+
+                if (l > _maxSteerForce) {
+
+                    steer.divideScalar(l / _maxSteerForce);
+
+                }
+
+                return steer;
+
+            }
+
+            this.separation = function(boids) {
+
+                var boid, distance,
+                    posSum = new THREE.Vector3(),
+                    repulse = new THREE.Vector3();
+
+                for (var i = 0, il = boids.length; i < il; i++) {
+
+                    if (Math.random() > 0.6) continue;
+
+                    boid = boids[i];
+                    distance = boid.position.distanceTo(this.position);
+
+                    if (distance > 0 && distance <= _neighborhoodRadius) {
+
+                        repulse.subVectors(this.position, boid.position);
+                        repulse.normalize();
+                        repulse.divideScalar(distance);
+                        posSum.add(repulse);
+
+                    }
+
+                }
+
+                return posSum;
+
+            }
+
+        }
+    </script>
+
+    <script>
+        var SCREEN_WIDTH = window.innerWidth,
+            SCREEN_HEIGHT = window.innerHeight,
+            SCREEN_WIDTH_HALF = SCREEN_WIDTH / 2,
+            SCREEN_HEIGHT_HALF = SCREEN_HEIGHT / 2;
+
+        var camera, scene, renderer,
+            birds, bird;
+
+        var boid, boids;
+
+        var stats;
+
+        init();
+        animate();
+
+        function init() {
+
+            camera = new THREE.PerspectiveCamera(75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
+            camera.position.z = 450;
+
+            scene = new THREE.Scene();
+
+            birds = [];
+            boids = [];
+
+            for (var i = 0; i < 200; i++) {
+
+                boid = boids[i] = new Boid();
+                boid.position.x = Math.random() * 400 - 200;
+                boid.position.y = Math.random() * 400 - 200;
+                boid.position.z = Math.random() * 400 - 200;
+                boid.velocity.x = Math.random() * 2 - 1;
+                boid.velocity.y = Math.random() * 2 - 1;
+                boid.velocity.z = Math.random() * 2 - 1;
+                boid.setAvoidWalls(true);
+                boid.setWorldSize(500, 500, 400);
+
+                bird = birds[i] = new THREE.Mesh(new Bird(), new THREE.MeshBasicMaterial({
+                    color: Math.random() * 0xffffff,
+                    side: THREE.DoubleSide
+                }));
+                bird.phase = Math.floor(Math.random() * 62.83);
+                scene.add(bird);
+
+
+            }
+
+            renderer = new THREE.CanvasRenderer();
+            renderer.setClearColor(0xffffff);
+            renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+            document.body.appendChild(renderer.domElement);
+
+
+            //
+
+            window.addEventListener('resize', onWindowResize, false);
+
+        }
+
+        function onWindowResize() {
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+        }
+
+        function onDocumentMouseMove(event) {
+
+            var vector = new THREE.Vector3(event.clientX - SCREEN_WIDTH_HALF, -event.clientY + SCREEN_HEIGHT_HALF, 0);
+
+            for (var i = 0, il = boids.length; i < il; i++) {
+
+                boid = boids[i];
+
+                vector.z = boid.position.z;
+
+                boid.repulse(vector);
+
+            }
+
+        }
+
+         //
+
+        function animate() {
+
+            requestAnimationFrame(animate);
+
+            render();
+
+        }
+
+        function render() {
+
+            for (var i = 0, il = birds.length; i < il; i++) {
+
+                boid = boids[i];
+                boid.run(boids);
+
+                bird = birds[i];
+                bird.position.copy(boids[i].position);
+
+                color = bird.material.color;
+                color.r = color.g = color.b = (500 - bird.position.z) / 1000;
+
+                bird.rotation.y = Math.atan2(-boid.velocity.z, boid.velocity.x);
+                bird.rotation.z = Math.asin(boid.velocity.y / boid.velocity.length());
+
+                bird.phase = (bird.phase + (Math.max(0, bird.rotation.z) + 0.1)) % 62.83;
+                bird.geometry.vertices[5].y = bird.geometry.vertices[4].y = Math.sin(bird.phase) * 5;
+            }
+            renderer.render(scene, camera);
+        }
+        function removeBird() {
+            if(location.hash === '#/title') {
+                var bird = document.getElementsByTagName('canvas')[0];
+                if(bird) {
+                    bird.parentNode.removeChild(bird);
+                }
+            }
+        }
+        window.onhashchange = removeBird;
+    </script>
 </body>
+
 </html>
 
 <!--
@@ -434,4 +874,3 @@ if ("ontouchstart" in document.documentElement) {
     Cheers!
     
 -->
-
