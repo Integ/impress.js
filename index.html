@@ -68,7 +68,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Hacker 基因测试 - SegmentFault</title>
+    <title>自由地飞 - SegmentFault</title>
 
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Integ" />
@@ -165,11 +165,11 @@
         It will not be rotated or scaled.
         
     -->
-        <div id="bored" class="step slide" style="opacity:0.9" data-x="-1000" data-y="-1500">
+       <!-- <div id="bored" class="step slide" style="opacity:0" data-x="-1000" data-y="-1500">
             <center>
                 <q><strong>SegmentFault</strong></q>
             </center>
-        </div>
+        </div>-->
         <!--
         
         The `id` attribute of the step element is used to identify it in the URL, but it's optional.
@@ -185,13 +185,13 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-        <div class="step slide" style="opacity:0.8" data-x="0" data-y="-1500">
-            <center><q><strong>寻找 Hacker</strong></q>
+        <div class="step slide" data-x="0" data-y="-1500">
+            <center><q><strong><br/><br/>是 Geek，<br/>就自由地飞！</strong></q>
         </div>
-        <div class="step slide" style="opacity:0.7" data-x="1000" data-y="-1500">
+        <!--<div class="step slide" style="opacity:0" data-x="1000" data-y="-1500">
             <center><q><strong>一起自由的飞</strong></q>
             </center>
-        </div>
+        </div>-->
 
         <!--
         
@@ -204,9 +204,9 @@
         
     -->
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-            <span class="try">来看看刚才这</span>
+            <span class="try" style="font-size:28px; text-align: center;">在刚才这</span>
             <center><h1>π <small style="font-size:30px;">秒</small></h1></canvas>
-            <span class="footnote">互联网上发生了什么</span>
+            <span class="footnote">互联网上发生了什么？</span>
         </div>
 
         <!--
@@ -271,11 +271,11 @@
         
     -->
         <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-            <p style="font-size:40px;">10 年前，<b class="positioning">Skype</b>, <b class="rotating">Facebook</b>, <b class="scaling">YouTube</b>, <b class="positioning">Reddit</b>, <b class="rotating">Twitter</b>, <b class="scaling">Tumblr</b>, <b class="positioning">Dropbox</b>, <b class="rotating">Instagram</b>还不存在</p>
+            <p style="font-size:30px;">10 年前，<b class="positioning">Skype</b>, <b class="rotating">Facebook</b>, <b class="scaling">YouTube</b>, <b class="positioning">Reddit</b>, <b class="rotating">Twitter</b>, <b class="scaling">Tumblr</b>, <b class="positioning">Dropbox</b>, <b class="rotating">Instagram</b>还不存在。</p>
         </div>
 
         <div id="imagination" class="step" data-x="6700" data-y="-800" data-scale="6">
-            <p>20 年前，互联网上只有 <b>130</b> 个网站, <b>Google</b> 的两位创始人才刚刚认识，<b class="imagination">Email</b> 服务是需要付费的。</p>
+            <p style="font-size:30px;">20 年前，互联网上只有 <b>130</b> 个网站, <b>Google</b> 的两位创始人才刚刚认识，<b class="imagination">Email</b> 服务是需要付费的。</p>
         </div>
 
         <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
@@ -283,8 +283,26 @@
             <p>世界上根本没有 Internet 。。。</p>
         </div>
 
+        <div id="bd1" class="step" data-x="8000" data-y="0" data-rotate="" data-scale="2">
+            <center><p>在中国</p><center>
+        </div>
+
+        <div id="bd2" class="step" data-x="8000" data-y="1000" data-rotate="270" data-scale="6">
+            <p style="font-size:30px;">20 年前，<br/>伟大的防火长城墙可能才开始规划。</p>
+        </div>
+
+        <div id="bd3" class="step" data-x="8000" data-y="2000" data-rotate="0" data-scale="4">
+            <p style="font-size:30px;margin-top:20px;">10年前，Google 还没进入中国。</p>
+        </div>
+
+        <div id="bd4" class="step" data-x="8000" data-y="3000" data-rotate="20" data-scale="4">
+            <p style="font-size:30px">
+                而现在，Google 已退出中国 5 年，<br/>你还能自由地「越过长城，走向世界」吗？</p>
+        </div>
+
         <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-            <q>加入 <a href="http://segmentfault.com/hiring">SegmentFault</a></q>
+            <p>是 Geek，就自由地飞 ➜  </p>
+            <q style="font-size: 24px;float:right;"><a href="http://segmentfault.com/hiring" target="_blank" style="text-decoration:underline;">加入 SegmentFault</a></q>
         </div>
 
         <!--
@@ -298,11 +316,12 @@
         You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
         as `data-rotate` (these two are basically aliases).
         
-    -->
         <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <q style="font-size: 20px;"><a href="http://segmentfault.com/hiring" target="_blank" style="text-decoration:underline;">加入 SegmentFault</a></q>
             <p><span class="have">创造</span><span class="you">属于</span><span class="noticed">开发者</span><span class="its">的</span><span class="in">时代</span></p>
             <span class="footnote" style="font-size:15px;">* Power by <a href="https://github.com/bartaz/impress.js">impress.js</a></span>
         </div>
+    -->
 
         <!--
         
@@ -318,9 +337,8 @@
         These values are used by impress.js in CSS transformation functions, so for more information consult
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
-    -->
-        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-        </div>
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
+        -->
 
     </div>
 
@@ -823,7 +841,7 @@
                 }
             }
         }
-        window.onhashchange = removeBird;
+        //window.onhashchange = removeBird;
     </script>
 </body>
 
